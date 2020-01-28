@@ -1,0 +1,161 @@
+
+.body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.logo{
+    background-color:  black;
+    opacity: 0.6;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 3px;;
+}
+.logo-text{
+    color: blanchedalmond;
+}
+.navbar {
+    position: absolute;
+    right: 0px;
+    top: 9vh;
+    display: flex;
+    background-color: black;
+    opacity: 0.7;
+    display: none;
+    overflow-x: hidden;
+  }
+ 
+  .navbar:active{
+      display: visible;
+  }
+  .main{
+      height: 40vh;
+      max-width: 900px;
+      background-color: burlywood;
+  }
+  .heading{
+      text-align: center;
+      padding-top:  2rem;
+      font-size: 1.5rem;
+  }
+  .text-inner{
+      padding-left: 0.4rem;
+      padding-bottom: 1rem;
+  }
+  .left{ 
+    position: relative;
+    max-width: 100%;
+    width: 80%;
+    height:280px;
+    background: url("../pics/69.jpg");
+    background-size: contain;
+    z-index: -1;
+    background-repeat: no-repeat;
+  }
+  .burger{
+      position: absolute;
+      right: 8px;
+      top: 5px;
+      float: right;
+      /* display: none; */
+      height: 33px;
+      width: 33px;
+      background-color: orange;
+      z-index: 1;
+  }
+  .line1{
+      position: relative;
+      top: 6px;
+      left: 6px;
+      height: 2px;
+      width: 22px;
+      background-color: white;
+  }
+  .line2{
+    position: relative;
+    top: 11px;
+    left: 6px;
+    height: 2px;
+    width: 22px;
+    background-color: white;
+}
+.line3{
+    position: relative;
+    top: 16px;
+    left: 6px;
+    height: 2px;
+    width: 22px;
+    background-color: white;
+}
+.right{
+    position: relative;
+    top: 0px;
+    height: 40vh;
+    width: 100%;
+    background-color: cadetblue;
+}
+.skills{
+    text-align: center;
+    font-size: 1.4rem;
+    padding-top: 1rem;
+    padding-bottom: 0.4rem;
+}
+.text-skills{
+    padding-left: 0.6rem;
+}
+.projects{
+    position: relative;
+    top: 435px;
+    height: 50vh;
+    width: 100%;
+    background-color: wheat;
+}
+.text-inner2{
+    position: relative;
+    top: 107px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+}
+.container{
+    width: 100%;
+    height: 43vh;
+    background-color: greenyellow;
+    opacity: 0.6;
+    position: relative;
+    top: 440px;
+    bottom: 0;
+}
+
+
+/* @media screen and(min-width:325px){
+    .body{
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    .navbar{
+        position: absolute;
+        right: 0px;
+        height: 90vh;
+        top: 8vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+
+    }
+    .navbar_a {
+        float: left;
+        display: flex;
+        color: blueviolet;
+        text-align: right;
+        padding: 14px;
+        text-decoration: none;
+        font-family: sans-serif;
+        flex-direction:row;
+      }
+      .navbar_a:hover {
+        background-color: #ddd;
+      }
+} */
