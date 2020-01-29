@@ -1,15 +1,19 @@
-
+@media only screen and (min-width: 320px){
+* {
+    box-sizing: border-box;
+  }
 .body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-family: sans-serif;
 }
 .logo{
     background-color:  black;
     opacity: 0.6;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    padding-left: 3px;;
+    padding-top: 12px;
+    padding-bottom: 6px;
+    padding-left: 9px;
 }
 .logo-text{
     color: blanchedalmond;
@@ -18,11 +22,18 @@
     position: absolute;
     right: 0px;
     top: 9vh;
-    display: flex;
-    background-color: black;
-    opacity: 0.7;
+    display: grid;
     display: none;
     overflow-x: hidden;
+  }
+  a{  
+    text-decoration: none;    
+    color:rgba(59, 73, 43, 0.856);
+    padding: 2px 0px 2px 0px;
+    margin: 2px 4px 2px 4px;
+  }
+  a:active{
+      color: black;
   }
  
   .navbar:active{
@@ -31,7 +42,7 @@
   .main{
       height: 40vh;
       max-width: 900px;
-      background-color: burlywood;
+      background-color: wheat;
   }
   .heading{
       text-align: center;
@@ -51,6 +62,18 @@
     background-size: contain;
     z-index: -1;
     background-repeat: no-repeat;
+  }
+  .javapic{
+    position: relative;
+    max-width: 100%;
+    top: 40%;
+    left: 15%;
+    width: 30%;
+    height:80px;
+    background: url("../pics/java.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: right;
   }
   .burger{
       position: absolute;
@@ -101,7 +124,13 @@
     padding-bottom: 0.4rem;
 }
 .text-skills{
+    /* display: grid; */
     padding-left: 0.6rem;
+    /* grid-template-rows: repeat(2, 20px 20px);
+    grid-template-columns:  20px 20px;
+    height: 20px;
+    width: 20px;
+    background-image: url('pics/htmlpic.png'); */
 }
 .projects{
     position: relative;
@@ -117,59 +146,107 @@
     font-weight: bold;
     font-size: 3rem;
 }
+.fade-out {
+    /* animation: fadeOut 4s infinite; */
+    animation: fadeOut ease 4s infinite;
+    -webkit-animation: fadeOut ease 4s infinite;
+    -moz-animation: fadeOut ease 4s infinite;
+    -o-animation: fadeOut ease 4s infinite;
+    -ms-animation: fadeOut ease 4s infinite;
+  }
+  @keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  
+  @-moz-keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  
+  @-webkit-keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  
+  @-o-keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  
+  @-ms-keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+  }
+}
 .container{
     width: 100%;
     height: 43vh;
-    background-color: greenyellow;
+    background-color: black;
     opacity: 0.6;
     position: relative;
     top: 440px;
     bottom: 0;
 }
-#myBtn{
-    position: relative;
-    top: 54px;
-    left: 186px;
-    width: 118px;
-    height: 226px;
-}
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /*Sit on top*/
-   
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  h4{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    color: chartreuse;
   }
-  
-  /* Modal Content/Box */
-  .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+  p{
+    text-align: center;
+    color: beige;  
   }
-  
-  /* The Close Button */
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
+  .fa {
+    /* padding: 20px; */
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
     text-decoration: none;
-    cursor: pointer;
+    
   }
-
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    /* background: #3B5998; */
+    color: white;
+    padding-left: 40%;
+    padding-top: 3%;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    /* background: #55ACEE; */
+    color: white;
+  }
+}
 /* @media screen and(min-width:325px){
     .body{
         margin: 0;
